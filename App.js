@@ -6,15 +6,11 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  StatusBar
-} from 'react-native';
+import React, { Component } from 'react'
 
-import HomeScreen from './Screens/Home/HomeScreen'
-import DetailsScreen from './Screens/Details/DetailsScreen'
+import HomeScreen from './src/Screens/Home/HomeScreen'
+import UserList from './src/Screens/UserList/UserList'
+import UserSubmission from './src/Screens/UserSubmission/UserSubmission'
 
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
@@ -24,7 +20,8 @@ import { createStackNavigator } from 'react-navigation-stack'
 const MainNavigator = createStackNavigator(
   {
     Home: {screen: HomeScreen},
-    Details: {screen: DetailsScreen},
+    UserList: {screen: UserList},
+    UserSubmission: {screen: UserSubmission}
   },
   {
     initialRouteName: 'Home',

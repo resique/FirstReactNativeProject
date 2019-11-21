@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-export const todoItemComponentStyle = StyleSheet.create({
+export const style = StyleSheet.create({
     todoTitleStyle: {
       flex: 1,
       flexWrap: 'wrap'

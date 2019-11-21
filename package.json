@@ -10,11 +10,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.6.3",
     "react": "16.9.0",
     "react-native": "0.61.4",
     "react-native-gesture-handler": "^1.5.0",
     "react-navigation": "^4.0.10",
-    "react-navigation-stack": "^1.10.3"
+    "react-navigation-stack": "^1.10.3",
+    "realm": "^3.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
