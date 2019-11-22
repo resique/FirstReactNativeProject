@@ -22,12 +22,6 @@ class HomeScreen extends Component {
 
     constructor(props) {
         super(props)
-        this.state = {
-            email: '',
-            username: '',
-            password: '',
-            realm: null
-        }
     }
 
     // Methods
