@@ -7,20 +7,16 @@ import {
     Button
   } from 'react-native'
 
-import realm  from 'realm'
-
-const Screens = {
-    Home: 'Home',
-    UserList: 'UserList',
-    UserSubmission: 'UserSubmission'
-}
+import { LoginManager } from 'react-native-fbsdk'
+import { Screens } from '../../Common/Screens'
 
 // HomeScreen
 
 class HomeScreen extends Component {
     static navigationOptions = {
         title: 'Home',
-      };
+        headerLeft : null
+      }
 
     // Constructor
 
@@ -59,6 +55,15 @@ class HomeScreen extends Component {
                         this.navigateTo(Screens.UserList)
                     }
                />
+
+                <Button
+                    title = 'Logout'
+                    onPress = {() =>  {
+                            this.navigateTo(Screens.Login)
+                            LoginManager.logOut()
+                        }
+                    }
+                />
            </SafeAreaView>
         )
     }

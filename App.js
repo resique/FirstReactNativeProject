@@ -14,17 +14,21 @@ import UserSubmission from './src/Screens/UserSubmission/UserSubmission'
 
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
+import LoginScreen from './src/Screens/Login/LoginScreen'
 
 // APP
 
 const MainNavigator = createStackNavigator(
   {
-    Home: {screen: HomeScreen},
+    Home: {
+      screen: HomeScreen
+    },
     UserList: {screen: UserList},
-    UserSubmission: {screen: UserSubmission}
+    UserSubmission: {screen: UserSubmission},
+    Login: {screen: LoginScreen}
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Login',
   }
 )
 
